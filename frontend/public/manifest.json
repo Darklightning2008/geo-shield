@@ -1,0 +1,17 @@
+{
+  "short_name": "GeoShield",
+  "name": "GeoShield Landslide Risk Intelligence Platform",
+  "description": "Real-time landslide & extreme weather early warning prototype",
+  "icons": [
+    {
+      "src": "data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🛡️</text></svg>",
+      "sizes": "192x192 512x512",
+      "type": "image/svg+xml"
+    }
+  ],
+  "start_url": "/",
+  "background_color": "#020617",
+  "theme_color": "#0f172a",
+  "display": "standalone",
+  "orientation": "portrait-primary"
+}

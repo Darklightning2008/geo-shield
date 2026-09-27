@@ -1,0 +1,87 @@
+/* GeoShield Light Clean Theme */
+@import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500;600&display=swap');
+
+body {
+  font-family: 'Plus Jakarta Sans', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+  background-color: #f8fafc;
+  color: #0f172a;
+}
+
+code, pre, .font-mono {
+  font-family: 'JetBrains Mono', monospace;
+}
+
+/* Map Container & Sizing Fixes */
+#riskMap {
+  width: 100%;
+  height: 520px;
+  background-color: #e2e8f0;
+  border-radius: 0.75rem;
+  position: relative;
+  overflow: hidden;
+  z-index: 1;
+}
+
+/* Fix Leaflet Z-Index so modals always render on top */
+.leaflet-container {
+  font-family: inherit;
+  z-index: 1 !important;
+}
+
+.leaflet-pane {
+  z-index: 10 !important;
+}
+
+.leaflet-top, .leaflet-bottom {
+  z-index: 20 !important;
+}
+
+/* Modern Light Leaflet Popups */
+.leaflet-popup-content-wrapper {
+  background: #ffffff !important;
+  color: #0f172a !important;
+  border: 1px solid #e2e8f0 !important;
+  border-radius: 0.75rem !important;
+  box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05) !important;
+  padding: 2px !important;
+}
+
+.leaflet-popup-tip {
+  background: #ffffff !important;
+}
+
+/* Map Pulse Marker */
+.custom-pulse-marker {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.pulse-ring {
+  border-radius: 50%;
+  height: 32px;
+  width: 32px;
+  position: absolute;
+  left: -8px;
+  top: -8px;
+  animation: pulsate 1.8s ease-out infinite;
+  opacity: 0;
+}
+
+@keyframes pulsate {
+  0% { transform: scale(0.2); opacity: 0.8; }
+  50% { opacity: 0.4; }
+  100% { transform: scale(1.6); opacity: 0; }
+}
+
+/* Citizen Pin */
+.citizen-pin {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Modals */
+.modal-overlay {
+  z-index: 9999 !important;
+}
