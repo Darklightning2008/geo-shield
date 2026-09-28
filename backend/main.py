@@ -21,7 +21,7 @@ from app.routers import (
 
 @asynccontextmanager
 async def lifespan(app: FastAPI):
-    # Initialize SQLite schema
+   
     await init_db()
     yield
 
